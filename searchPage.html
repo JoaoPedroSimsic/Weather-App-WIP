@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change Background Color</title>
+    <style>
+      .linha {
+        padding: 10px;
+        transition: background-color 0.3s ease;
+      }
+      .destaque {
+        background-color: lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="linha" id="linha">
+      <input type="text" />
+      <button type="submit">button</button>
+    </div>
+
+    <script>
+      // Captura o elemento da linha
+      var linha = document.getElementById("linha");
+
+      // Função para alterar a cor de fundo da linha
+      function mudarCorFundo() {
+        linha.classList.add("destaque");
+      }
+
+      // Event listener para detectar a inserção de texto
+      document.addEventListener("input", function (event) {
+        // Verifica se o texto foi inserido na linha
+        if (event.target === linha) {
+          mudarCorFundo();
+        }
+      });
+    </script>
+  </body>
+</html>
