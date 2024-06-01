@@ -1,3 +1,10 @@
+const enter = document.querySelector("#inputCity");
+enter.addEventListener("keypress", function (press) {
+  if (press.key === "Enter") {
+    Weather();
+  }
+});
+
 function Weather() {
   const button = document.querySelector("#submitButton");
   const inputValue = document.querySelector("#inputCity");

@@ -118,6 +118,7 @@ input[type="text"] {
 
 .feelsLike {
   font-size: 2em;
+  position: absolute;
 }
 
 .topH {
@@ -129,6 +130,7 @@ input[type="text"] {
 
 .humidity {
   font-size: 2em;
+  position: absolute;
 }
 
 .toptN {
@@ -140,6 +142,7 @@ input[type="text"] {
 
 .tempMin {
   font-size: 2em;
+  position: absolute;
 }
 
 .toptX {
@@ -151,6 +154,7 @@ input[type="text"] {
 
 .tempMax {
   font-size: 2em;
+  position: absolute;
 }
 
 .topInfo {
